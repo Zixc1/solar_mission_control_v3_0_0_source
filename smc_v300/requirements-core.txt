@@ -1,0 +1,7 @@
+requests
+numpy<2
+python-dateutil
+PyYAML
+Pillow
+matplotlib
+reportlab

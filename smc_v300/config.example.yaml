@@ -1,0 +1,21 @@
+application:
+  output_directory: swrl_report
+analysis:
+  hours_back: 72
+  hours_forward: 48
+  risk_step_hours: 3
+visuals:
+  enabled: true
+  interactive: false
+  width: 2560
+  height: 1440
+  dpi: 200
+  include_images: true
+reports:
+  text: true
+  html: true
+  pdf: true
+storage:
+  enabled: true
+  database_url: sqlite:///swrl_report/solar_mission_control.db
+  retention_days: 180

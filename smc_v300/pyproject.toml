@@ -1,0 +1,18 @@
+[build-system]
+requires=["setuptools>=68","wheel"]
+build-backend="setuptools.build_meta"
+[project]
+name="solar-mission-control"
+version="3.0.0"
+description="Operational space-weather monitoring and reporting"
+requires-python=">=3.10"
+dependencies=["requests","numpy<2","python-dateutil","PyYAML","Pillow","matplotlib","reportlab"]
+[project.optional-dependencies]
+solar=["astropy","sunpy[all]","drms","zeep","beautifulsoup4","lxml"]
+interactive=["plotly"]
+full=["astropy","sunpy[all]","drms","zeep","beautifulsoup4","lxml","plotly","python-dotenv"]
+dev=["pytest","pytest-cov","responses","freezegun"]
+[project.scripts]
+solar-mission-control="solar_mission_control.cli.commands:main"
+[tool.setuptools.packages.find]
+where=["."]

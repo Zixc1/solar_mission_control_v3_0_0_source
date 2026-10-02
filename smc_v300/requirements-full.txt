@@ -1,0 +1,9 @@
+-r requirements-core.txt
+astropy
+sunpy[all]
+drms
+zeep
+beautifulsoup4
+lxml
+plotly
+python-dotenv

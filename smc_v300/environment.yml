@@ -1,0 +1,14 @@
+name: solar-mission-control
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy=1.26.4
+  - matplotlib
+  - pillow
+  - astropy
+  - sunpy
+  - reportlab
+  - pyyaml
+  - requests
+  - plotly
+  - pip
